@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 15, 48);
+}
+.container{
+    max-width: 650px; /*largura máxima de um elemento.max-width*/
+    margin: 50px auto;
+    background:#ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+form input, form label,form button{
+    display: block;
+    
+    margin-bottom: 10px; /* espaçamento entre as box*/
+  
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+   
+}
+form input{
+    font-size: 30px;
+    height: 30px;/*altura das box*/
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+}
+
+
