@@ -12,6 +12,14 @@ function CriaLi(){
     console.log(e);
 }) */ //FUNÇÃO PARA VIZUALIZAR O KEYCODE DA TECLA PRESSIONADA 
 
+Tarefas.addEventListener('keypress', function(e){
+    if(e.keyCode === 13){// AQUI PEGUEI O KEYCODE DO ENTER PARA ATRIBUIR FUNCIONALIDADE NELE
+      if(!Tarefas.value) return; //PEGUEI O EVENTO DE CLICK E FIZ UMA FUNÇÃO PARA ME RETORNAR O VALOR NO INPUT
+     PegaTarefa(Tarefas.value);    
+    }
+})
+
+
 function PegaTarefa(Texto){
     const li = CriaLi();
     li.innerText = Texto;
