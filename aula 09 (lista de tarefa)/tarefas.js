@@ -19,14 +19,30 @@ Tarefas.addEventListener('keypress', function(e){
     }
 })
 
+function LimpaInput(){
+    Tarefas.value = '';
+    Tarefas.focus(); //O FOCUS É UM EVENTO DO HTML PARA O CURSOR
+
+}
 
 function PegaTarefa(Texto){
     const li = CriaLi();
     li.innerText = Texto;
     Lista.appendChild(li);
+    LimpaInput();
+    criaButton(li);
+
 }
 
 Inserir.addEventListener('click', function(){
     if(!Tarefas.value) return; //PEGUEI O EVENTO DE CLICK E FIZ UMA FUNÇÃO PARA ME RETORNAR O VALOR NO INPUT
     PegaTarefa(Tarefas.value);
+    
 });
+
+function criaButton(li){
+    li.innerText += " ";
+    const botaoApagar = document.createElement('button')
+    botaoApagar.innerText = "click";
+    li.appendChild(botaoApagar);
+}
