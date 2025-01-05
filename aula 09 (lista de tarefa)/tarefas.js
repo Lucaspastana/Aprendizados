@@ -44,5 +44,11 @@ function criaButton(li){
     li.innerText += " ";
     const botaoApagar = document.createElement('button')
     botaoApagar.innerText = "click";
+    botaoApagar.setAttribute('class', 'apagar');
+    botaoApagar.setAttribute('title', 'apagar');
     li.appendChild(botaoApagar);
 }
+
+document.addEventListener('click', function(e){
+    const el = e.target
+})
