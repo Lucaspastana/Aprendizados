@@ -50,5 +50,5 @@ function criaButton(li){
 }
 
 document.addEventListener('click', function(e){
-    const el = e.target
+    const el = e.target;
 })
