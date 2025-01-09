@@ -53,6 +53,6 @@ document.addEventListener('click', function(e){
     const el = e.target;
 
     if(el.classList.contains('apagar')){ //SELECIONEI O BOTAO DAS TAREFAS PARA APAGAR  (QUANDO CLICAR)
-        console.log('clicou')
+        el.parentElement.remove() // REMOVE A ARVORE GENEALOGICA QUE FOR MONTADA
     }   
 })
