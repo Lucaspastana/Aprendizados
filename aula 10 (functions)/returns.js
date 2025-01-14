@@ -11,6 +11,8 @@ const fala = falaFrase('ola')
 const resto = fala('mundo');
 console.log(resto); */
 
+
+ 
 function criaMultiplicador(multiplicador){
     return function (n){
         return n * multiplicador;
