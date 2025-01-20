@@ -11,3 +11,5 @@
     falaNome();
     console.log(idade,peso,altura);
 })(30,80,1.80);
+
+//FUNÇÃO QUE NAO SUAS VARIAVEIS VAZAREM PARA O ESCOPO GLOBAL
