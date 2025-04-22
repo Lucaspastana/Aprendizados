@@ -1,3 +1,5 @@
+//A propriedde (prototype) retorna uma listagem de todas as propriedades e metodos de um objeto nativo.
+
 function Produto(nome, preço){
     this.nome= nome;
     this.preço= preço;
@@ -17,3 +19,5 @@ const p2 = {
     nome: 'caneca',
     preço: 15
 }
+
+console.log(p1);
