@@ -1,10 +1,12 @@
+// CLASSES SERVE COMO MOLDES PARA PODERMOS APROVEITAR O CÓDIGO E MANIPULAR SUAS FUNÇOES E METÓDOS 
+
 class Product{
     constructor(name,price){
         this.name= name;
         this.price=price;
     }
     displayProduct(){
-        console.log(`Product ${this.name}`);
+        console.log(`Product ${this.name}`);  //TEMPLATES STRINGS.
         console.log(`Product/${this.price.toFixed(2)}`);
     }
     
