@@ -1,5 +1,7 @@
 // CLASSES SERVE COMO MOLDES PARA PODERMOS APROVEITAR O CÓDIGO E MANIPULAR SUAS FUNÇOES E METÓDOS 
 
+// OBS: class não usa parenteses !!
+
 class Product{
     constructor(name,price){
         this.name= name;
