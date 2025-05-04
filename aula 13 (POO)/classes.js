@@ -22,3 +22,4 @@ const salesTax = 0.05;
 const product1 = new Product ("Cell", 1200);
 
 console.log(product1);
+
