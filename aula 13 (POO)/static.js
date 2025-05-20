@@ -16,6 +16,7 @@ class ControleRemoto{
     }
 //o STATIC é basicamente uma funçao que está dentro de uma class.
 //Usamos o static para organização do código.
+// o STATIC  não tem acesso ao dados das outras instancias.
     static soma(x,y){
         return x + y;
         
