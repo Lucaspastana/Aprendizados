@@ -1,5 +1,14 @@
 // CLASSES SERVE COMO MOLDES PARA PODERMOS APROVEITAR O CÓDIGO E MANIPULAR SUAS FUNÇOES E METÓDOS 
 
+// CLASSES SÃO FORMAS VAZIAS PARA CRIAR OBJETOS. ELAS ENCAPSULAS DADOS COM CÓDIGO, PARA PODER MANIPULAR E CONFIGURAR 
+
+// Uma class pode ser caracterizada por três aspects:
+/*  KIND: Getter,setter,method, or fiels
+    LOCATION: Static or instance
+    VISIBILIDADE: Public ou privado
+
+*/
+
 // OBS: class não usa parenteses !!
 
 class Product{
@@ -13,7 +22,7 @@ class Product{
     }
     
     calculateAll(salesTax){
-        return this.price + (this.price * salesTax);
+        return this.price + (this.price * salesTax); 
     }
 }
 

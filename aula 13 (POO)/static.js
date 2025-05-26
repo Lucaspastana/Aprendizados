@@ -29,6 +29,7 @@ const IniciaControle1 = new ControleRemoto("itv");
 IniciaControle1.aumentar();
 IniciaControle1.aumentar();
 IniciaControle1.aumentar();
+IniciaControle1.aumentar();
 //O metodo STATIC  só pode ser chamado pela class no exemplo utilizei a class principal que é: "ControleRemoto".
 console.log(ControleRemoto.soma(5,5));
 
