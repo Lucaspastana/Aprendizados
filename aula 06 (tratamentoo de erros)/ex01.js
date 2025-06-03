@@ -17,11 +17,11 @@ function retornaHora(data){ // crie
 }
 
 try{
-    const data = new Date('');
+    const data = new Date('01-01-1970');
     const hora = retornaHora();
     console.log(hora);
 } catch(e){
-
+  //trata erro
 }finally{
     console.log('bom dia');
 }

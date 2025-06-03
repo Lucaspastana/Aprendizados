@@ -13,6 +13,10 @@ Para sobrecarregar comportamentos padrão (como iteração).
 */
 
 
+
+/* o metodo SET  serve para quando eu preciso alterar || mudar o valor de um atríbuto */
+
+
 const _velocidade = Symbol('velocidade')
 class Carro{ 
     constructor(nome){
@@ -22,14 +26,14 @@ class Carro{
 
     set velocidade(valor){
         console.log("SETTER");
-        if(typeof valor !== 'number')return;
-        if(valor >= 100 || valor >= 0)return;
+        if (typeof valor !== 'number') return;
+        if (valor < 0 || valor > 100) return;        
         this[_velocidade] = valor;
     }
 
     get velocidade(){
         console.log('GETTER');
-        return this(_velocidade)
+        return this[_velocidade]
     }
 
     acelerar(){
@@ -48,6 +52,5 @@ const c1 = new Carro("fusion");
 //for (let i= 0; i <= 200; i++){
  //   c1.acelerar();
 //}
-
+c1.velocidade= 98;
 console.log(c1.velocidade);
-c1.velocidade= 55;

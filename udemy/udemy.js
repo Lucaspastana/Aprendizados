@@ -26,7 +26,10 @@ numeroTitulo.innerHTML = numero;
 texto.innerHTML = '';
 texto.innerHTML += `<p>Seu numero + 2 é ${numero + 2}.</p>`;*/
 
-function meuEscopo() {
+
+// 2 CODIGO DO JS.
+
+/*function meuEscopo() {
     const form = document.querySelector('.form');
     const resultado = document.querySelector('.resultado');
 
@@ -54,4 +57,21 @@ function meuEscopo() {
  
     form.addEventListener('submit', recebeEventoForm);
 }
-meuEscopo();
+meuEscopo(); */
+
+//3 CÓDIGO JS
+
+class Pessoa{
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+falar() {
+    console.log(`${this.nome} está comendo`);
+}
+}
+
+
+const p1 = new Pessoa("Lucas", 25);
+console.log(p1);
