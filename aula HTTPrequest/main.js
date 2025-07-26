@@ -3,6 +3,8 @@ const request = obj =>{
   xhr.open(obj.method,obj.url, true);
   xhr.send();
 
+  console.log(xhr)
+
   xhr.addEventListener('load',()=>{
     if(xhr.status >= 200 && xhr.status <300){
       obj.sucess(xhr.responseText)
