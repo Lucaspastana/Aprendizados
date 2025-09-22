@@ -29,3 +29,16 @@ async function Simsalabim() {
     console.log(e)
   }
 }
+
+//exemplo de callback
+
+function greeting(name) {
+  alert("Olá " + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt("exemplo de callback");
+  callback(name);
+}
+
+processUserInput(greeting);
